@@ -13,5 +13,3 @@ for(var i = 2; i < process.argv.length; i++){
   }
 }
 server(port, root_dir)
-console.log(port)
-//console.log(root_dir)
