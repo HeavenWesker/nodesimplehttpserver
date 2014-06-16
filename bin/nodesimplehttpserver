@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var root = process.argv[3] ? process.argv[3] : process.cwd()
+var port = process.argv[2] ? process.argv[2] : 4000
+var server = require("../lib/nodeSimpleHTTPServer.js").server
+server(port, root)

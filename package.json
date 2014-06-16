@@ -1,0 +1,22 @@
+{
+  "name": "nodesimplehttpserver",
+  "version": "0.0.0",
+  "description": "A simple http server based on nodejs",
+  "main": "nodeSimpleHTTPServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+     "nodesimplehttpserver": "./bin/nodesimplehttpserver"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git:nodeSimpleHTTPServer.git"
+  },
+  "keywords": [
+    "http",
+    "server"
+  ],
+  "author": "heavenwesker <Heaven.Wesker@gmail.com>",
+  "license": "ISC"
+}
