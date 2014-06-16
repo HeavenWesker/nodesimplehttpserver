@@ -1,5 +1,17 @@
 #!/usr/bin/env node
-var root = process.argv[3] ? process.argv[3] : process.cwd()
-var port = process.argv[2] ? process.argv[2] : 4000
+//var root_dir = process.argv[3] ? process.argv[3] : process.cwd()
+var path = require("path")
+var fs = require("fs")
+var root_dir = process.cwd()
+var port = 4000
 var server = require("../lib/nodeSimpleHTTPServer.js").server
-server(port, root)
+for(var i = 2; i < process.argv.length; i++){
+  if(process.argv[i] === "-p" && process.argv[i+1] < 65535 && process.argv[i+1] > 0){
+    var port = process.argv[i+1]
+  }else if(process.argv[i] === "-d" && fs.existsSync(process.argv[i+1])){
+    root_dir = process.argv[i+1]
+  }
+}
+server(port, root_dir)
+console.log(port)
+//console.log(root_dir)
