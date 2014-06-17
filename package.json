@@ -1,6 +1,6 @@
 {
   "name": "nodesimplehttpserver",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "description": "A simple http server based on nodejs",
   "main": "nodeSimpleHTTPServer.js",
   "scripts": {
