@@ -1,6 +1,6 @@
 {
   "name": "nodesimplehttpserver",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "A simple http server based on nodejs",
   "main": "nodeSimpleHTTPServer.js",
   "scripts": {
@@ -11,7 +11,7 @@
    },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HeavenWesker/nodesimplehttpserver.git"
+    "url": "git:nodeSimpleHTTPServer.git"
   },
   "keywords": [
     "http",
